@@ -28,4 +28,5 @@ def get_inventory():
     return jsonify(response.json())
 
 #Ejecutamos el servidor
-app.run()
+if __name__ == "__main__":
+    app.run(debug=True)
